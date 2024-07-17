@@ -1,0 +1,1216 @@
+/* Global Styles */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    background-color: #F8F8F8;
+}
+
+a {
+    color: #1B1B1B;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #BC0005;
+}
+
+.bgGrayscaleBlack {
+    color: #1B1B1B;
+}
+
+.bgGrayscale900 {
+    color: #343A40;
+}
+
+.bgGrayscale700 {
+    color: #6C757D;
+}
+
+.bgGrayscale400 {
+    color: #C1CED9;
+}
+
+.bgGrayscale100 {
+    color: #F5F5F5;
+}
+
+.bgGrayscaleWhite {
+    color: #F8F8F8;
+}
+
+.bgPrimary400 {
+    color: #DE0F15;
+}
+
+.bgPrimary500 {
+    color: #BC0005;
+}
+
+.bgSecondary400 {
+    color: #05195A;
+}
+
+.txtH1 {
+    font-family: "Open Sans";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+
+.txtH2 {
+    font-family: "Open Sans";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.txtH3 {
+    font-family: "Open Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.txtH4 {
+    font-family: "Open Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.txtP1 {
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2;
+}
+
+.txtP3 {
+    font-family: "Open Sans";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.txtP4 {
+    font-family: "Open Sans";
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.txtB1 {
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.txtB2 {
+    font-family: "Open Sans";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.txtBold {
+    font-weight: 700;
+}
+
+/* Add scroll animation */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Add smooth scrolling effect */
+.scroll-link {
+    text-decoration: none;
+}
+
+/* Custom Styles */
+.buttonPrimary {
+    border-radius: 6px;
+    background-color: #de0f15;
+    justify-content: center;
+    margin: auto 0;
+}
+
+.buttonPrimary:hover {
+    background-color: #BC0005;
+}
+
+.buttonSecondary {
+    border-radius: 6px;
+    background-color: #E9ECEF;
+    justify-content: center;
+    margin: auto 0;
+    color: #1B1B1B;
+}
+
+.buttonSecondary:hover {
+    background-color: #495057;
+    color: #f8f8f8;
+}
+
+.buttonOutline {
+    border: 2px solid #E9ECEF;
+    border-radius: 6px;
+    justify-content: center;
+    margin: auto 0;
+    color: #E9ECEF;
+    cursor: pointer;
+    display: inline;
+}
+
+.buttonOutline:hover {
+    background-color: #E9ECEF;
+    color: #1B1B1B;
+}
+
+.buttonIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    background-color: #F8F8F8;
+    border-color: #C1CED9;
+}
+
+.buttonIcon:hover {
+    background-color: #C1CED9;
+}
+
+.buttonL {
+    padding: 16px 24px;
+}
+
+.buttonM {
+    padding: 10px 16px;
+    display: inline-block;
+}
+
+.buttonS {
+    padding: 8px 12px;
+    display: inline-block;
+}
+
+@media (max-width: 991px) {
+    .buttonL {
+        padding: 10px 16px;
+    }
+}
+
+.marginB16 {
+    margin-bottom: 16px;
+}
+
+.marginB24 {
+    margin-bottom: 24px;
+}
+
+.marginB40 {
+    margin-bottom: 40px;
+}
+
+.marginB80 {
+    margin-bottom: 80px;
+}
+
+.marginR8 {
+    margin-right: 8px;
+}
+
+.marginR16 {
+    margin-right: 16px;
+}
+
+.marginR32 {
+    margin-right: 32px;
+}
+
+
+.hide {
+    display: none;
+}
+
+.hideMobile {
+    display: inline-block;
+}
+
+.showMobile{
+    display: none;
+}
+
+.modal-header {
+    border: 0;
+    margin-bottom: 40px;
+}
+
+.boxShadow {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    border-radius: 16px;
+}
+
+.test {
+    background-color: #DE0F15;
+}
+
+.removeP {
+    padding: 0;
+}
+
+.liNumbers {
+    list-style-type: decimal;
+}
+
+.inlineLink {
+    text-decoration: underline;
+    color: #de0f15;
+}
+
+.iframeContainer {
+    position: relative;
+    width: 100%;
+    height: 560px;
+}
+
+.fullWidthIframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.lineHorizontal {
+    border-style: solid;
+    border-bottom: #05195A;
+    border-width: 1px;
+    width: 100%;
+}
+
+.nav-link {
+    color: #C1CED9;
+}
+
+.nav-link:hover {
+    color: #BC0005;
+}
+
+.nav .nav-link.active {
+    color: #DE0F15;
+}
+
+.sectionTitle {
+    margin: 40px auto 24px;
+}
+
+.anchorInline {
+    color: #DE0F15;
+    text-decoration: underline;
+}
+
+/* Navbar */
+.navBarLeft {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navBarCustom {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    padding: 16px 32px;
+    background-color: #f8f8f8;
+}
+
+.navBarRight {
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+
+.logo {
+    aspect-ratio: 3.23;
+    object-fit: contain;
+    object-position: left;
+    width: 200px;
+    max-width: 100%;
+    min-width: 150px;
+}
+
+.textAlignLeft {
+    text-align: left;
+}
+
+#offcanvasResponsive {
+    display: none;
+}
+
+
+
+@media (max-width: 991px) {
+    .buttonSignUp {
+        display: none;
+    }
+
+    .buttonSignUpBurger {
+        margin-bottom: 40px;
+    }
+
+    .navBarRight {
+        flex-grow: 0;
+    }
+
+    #offcanvasResponsive {
+        display: flex;
+    }
+
+    .closeOffCanvas{
+        color: #1B1B1B;
+    }
+}
+
+/* ANIMATION */
+@keyframes expandIn {
+    0% {
+        height: 40%;
+    }
+
+    100% {
+        height: 100%;
+    }
+}
+
+@keyframes expandOut {
+    0% {
+        height: 100%;
+    }
+
+    100% {
+        height: 40%;
+    }
+}
+
+@keyframes opacityIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes opacityOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+/* SECT1 - Main banner*/
+#sect1 {
+    height: 90vh;
+    background-color: red;
+    position: relative;
+}
+
+.mainBannerVid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 80px;
+    z-index: 2;
+}
+
+.blackGradientOverlay::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.0) 50%, rgba(0, 0, 0, 0));
+}
+
+.scrollAnimation {
+    width: 104px;
+    height: 104px;
+    background-image: url("../images/scrollAnimation.gif");
+    background-size: contain;
+    background-position: center;
+    margin: auto;
+}
+
+
+/* SECT2 - EVENT DETAILS*/
+#sect2{
+    padding-top: 40px;
+}
+
+.highlightContainerItem{
+    height: 304px;
+    min-width: 19%;
+    padding: 32px 16px;
+    margin: 0 auto;
+    position: relative;
+    background-color: #E9ECEF;
+    border-radius: 128px;
+}
+
+.highlightContainerItem:hover{
+    background-color: #05195A;
+}
+
+.highlightContainerItem:hover .bgSecondary400{
+    color: #F8F8F8;
+}
+
+.iconHighlight1{
+    height: 128px;
+    background-image: url("../images/iconHighlight1.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.iconHighlight1:hover{
+    background-image: url("../images/iconHighlight1-Hover.svg");
+}
+
+.iconHighlight2{
+    height: 128px;
+    background-image: url("../images/iconHighlight2.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.iconHighlight2:hover{
+    background-image: url("../images/iconHighlight2-Hover.svg");
+}
+
+.iconHighlight3{
+    height: 128px;
+    background-image: url("../images/iconHighlight3.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.iconHighlight3:hover{
+    background-image: url("../images/iconHighlight3-Hover.svg");
+}
+
+.iconHighlight4{
+    height: 128px;
+    background-image: url("../images/iconHighlight4.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.iconHighlight4:hover{
+    background-image: url("../images/iconHighlight4-Hover.svg");
+}
+
+.iconHighlight5{
+    height: 128px;
+    background-image: url("../images/iconHighlight5.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.iconHighlight5:hover{
+    background-image: url("../images/iconHighlight5-Hover.svg");
+}
+
+/* SECT5 - OUR SCHOOLS*/
+.cardSchoolContainer {
+    height: 320px;
+    min-width: 20%;
+    padding: 0 8px;
+    margin: 0 auto 16px;
+    position: relative;
+}
+
+.cardSchoolTitle {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    left: 8px;
+    width: calc(100% - 16px);
+    box-sizing: border-box;
+    height: 40%;
+    justify-content: center;
+    background-color: #05195A;
+    border-radius: 0 0 16px 16px;
+}
+
+.cardSchoolContainer:hover .cardSchoolTitle {
+    animation: expandInSchool 0.5s ease-in-out forwards;
+    border-radius: 16px;
+    transition: all 1s linear;
+}
+
+.cardSchoolContainer:not(:hover) .cardSchoolTitle {
+    animation: expandOutSchool 0.5s ease-in-out forwards;
+    border-radius: 0;
+    transition: all 1s linear;
+}
+
+@keyframes expandInSchool {
+    0% {
+        height: 40%;
+        background-color: rgba(0, 0, 0, 0.0);
+    }
+
+    100% {
+        height: 100%;
+        background-color: #05195A;
+    }
+}
+
+@keyframes expandOutSchool {
+    0% {
+        height: 100%;
+        background-color: #05195A;
+    }
+
+    100% {
+        height: 40%;
+        background-color: rgba(0, 0, 0, 0.0);
+    }
+}
+
+.cardSchoolContainer:hover .hide {
+    animation: opacityIn 0.8s ease-in-out forwards;
+    display: inline-block;
+    margin-top: 18px;
+}
+
+.cardSchoolContainer:not(:hover) .hide {
+    animation: opacityOut 0.8s ease-in-out forwards;
+}
+
+.cardSchoolContainer:hover .blackGradientOverlay::before {
+    animation: expandInSchoolOverlay 1s ease-in-out forwards;
+    margin: 0 8px;
+    border-radius: 0 0 16px 16px;
+}
+
+.cardSchoolContainer:not(:hover) .blackGradientOverlay::before {
+    animation: expandOutSchoolOverlay 0.5s ease-in-out forwards;
+    margin: 0 8px;
+    border-radius: 0 0 16px 16px;
+}
+
+@keyframes expandInSchoolOverlay {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes expandOutSchoolOverlay {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.cardSchoolImg1 {
+    height: 320px;
+    background-image: url("../images/cardSchoolImg1.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px;
+}
+
+.cardSchoolImg2 {
+    height: 320px;
+    background-image: url("../images/cardSchoolImg2.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px;
+}
+
+.cardSchoolImg3 {
+    height: 320px;
+    background-image: url("../images/cardSchoolImg3.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px;
+}
+
+.cardSchoolImg4 {
+    height: 320px;
+    background-image: url("../images/cardSchoolImg4.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px;
+}
+
+.cardSchoolImg5 {
+    height: 320px;
+    background-image: url("../images/cardSchoolImg5.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px;
+}
+
+
+/* SECT6 - APPLICATION TIMELINE*/
+.timelineTabContainer {
+    padding: 40px 0;
+}
+
+.timeline {
+    position: relative;
+    width: 80%;
+    margin: 40px auto;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    height: 100%;
+    border-left: 2px dotted #6C757D;
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    position: relative;
+    width: 50%;
+    height: 100px;
+    margin: 0 auto;
+    padding-bottom: 16px;
+    border-bottom: 2px dotted #6C757D;
+}
+
+.dotLeft {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    right: -12px;
+    width: 12px;
+    height: 12px;
+    background-color: #6C757D;
+    border-radius: 50%;
+    transform: translateX(-50%);
+}
+
+.dotRight {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 12px;
+    height: 12px;
+    background-color: #6C757D;
+    border-radius: 50%;
+    transform: translateX(-50%);
+}
+
+.timeline-item.left {
+    float: left;
+    clear: both;
+}
+
+.timeline-item.right {
+    float: right;
+    clear: both;
+}
+
+.timeline-item.left {
+    text-align: left;
+}
+
+.timeline-item.right {
+    text-align: right;
+}
+
+.timelineLVHeight {
+    height: 900px;
+}
+
+.timelineSCHeight {
+    height: 600px;
+}
+
+.timelineLCHeight {
+    height: 600px;
+}
+
+.timelineKVHeight {
+    height: 600px;
+}
+
+/* SECT7 - TESTIMONIALS */
+.overflow-x-auto {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 0 5%;
+}
+
+
+.flex-nowrap {
+    flex-wrap: nowrap;
+}
+
+.overflow-x-auto::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.overflow-normal {
+    overflow-x: hidden;
+    white-space: wrap;
+}
+
+
+.flex-nowrap {
+    flex-wrap: nowrap;
+}
+
+
+.cardTestimoniContainer {
+    height: 320px;
+    width: 280px;
+    padding: 0 8px;
+    margin: 0 auto;
+    position: relative;
+    display: inline-block;
+}
+
+.cardTestimoniTitle {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    left: 8px;
+    width: calc(100% - 16px);
+    box-sizing: border-box;
+    height: 40%;
+    justify-content: center;
+    border-radius: 0 0 16px 16px;
+}
+
+.cardTestimoniContainer:hover .cardTestimoniTitle {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.0) 90%, rgba(0, 0, 0, 0));
+    height: 70%;
+    transition: all .5s ease-out;
+}
+
+.cardTestimoniContainer:not(:hover) .cardTestimoniTitle {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.0) 50%, rgba(0, 0, 0, 0));
+    height: 40%;
+    transition: all .5s ease-out;
+}
+
+.cardTestimoniContainer:hover .hide {
+    animation: opacityIn 0.8s ease-in-out forwards;
+    display: inline-block;
+    margin-top: 18px;
+}
+
+.cardTestimoniContainer:not(:hover) .hide {
+    animation: opacityOut 0.8s ease-in-out forwards;
+}
+
+.cardTestimoniContainer:hover .blackGradientOverlay::before {
+    animation: expandInSchoolOverlay 1s ease-in-out forwards;
+    margin: 0 8px;
+    border-radius: 0 0 16px 16px;
+}
+
+.cardTestimoniContainer:not(:hover) .blackGradientOverlay::before {
+    animation: expandOutSchoolOverlay 1s ease-in-out forwards;
+    margin: 0 8px;
+    border-radius: 0 0 16px 16px;
+}
+
+.modalBodyTestimoniContainer {
+    height: 520px;
+}
+
+.footerTestimoniIG {
+    padding: 8px 0 0;
+}
+
+.showTable{
+    display: none;
+}
+
+.cardTestimoniImg1 {
+    height: 320px;
+    background-image: url("../images/cardTestimoniImg1.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px;
+}
+
+.cardTestimoniImg2 {
+    height: 320px;
+    background-image: url("../images/cardTestimoniImg2.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px;
+}
+
+.cardTestimoniImg3 {
+    height: 320px;
+    background-image: url("../images/cardTestimoniImg3.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px;
+}
+
+.cardTestimoniImg4 {
+    height: 320px;
+    background-image: url("../images/cardTestimoniImg4.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px;
+}
+
+.cardTestimoniImg5 {
+    height: 320px;
+    background-image: url("../images/cardTestimoniImg5.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px;
+}
+
+.cardTestimoniImg6 {
+    height: 320px;
+    background-image: url("../images/cardTestimoniImg6.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px;
+}
+
+.cardTestimoniImg7 {
+    height: 320px;
+    background-image: url("../images/cardTestimoniImg7.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px;
+}
+
+.cardTestimoniImg8 {
+    height: 320px;
+    background-image: url("../images/cardTestimoniImg8.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px;
+}
+
+.cardTestimoniImg9 {
+    height: 320px;
+    background-image: url("../images/cardTestimoniImg9.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px;
+}
+
+.cardTestimoniImg10 {
+    height: 320px;
+    background-image: url("../images/cardTestimoniImg10.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px;
+}
+
+.cardTestimoniImg11 {
+    height: 320px;
+    background-image: url("../images/cardTestimoniImg11.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px;
+}
+
+.cardTestimoniImg12 {
+    height: 320px;
+    background-image: url("../images/cardTestimoniImg12.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px;
+}
+.swipeLeftRight {
+    width: 40px;
+    height: 40px;
+    background-image: url("../images/Swipe-left-right.svg");
+    background-size: contain;
+    background-position: center;
+    margin: auto;
+}
+
+/* SECT8 - CTA */
+#sect8 {
+    width: 100%;
+    height: 640px;
+}
+
+.CTAImg {
+    height: 640px;
+    background-image: url("../images/CTAImg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/* SECT9 - FAQ */
+
+.FAQContainer {
+    margin: 80px auto;
+    padding: 0;
+    position: relative;
+}
+
+.FAQImg {
+    height: 400px;
+    background-image: url("../images/FAQImg.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px;
+}
+
+.FAQImg.blackGradientOverlay::before {
+    border-radius: 16px;
+}
+
+.FAQCaption {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 40px;
+    width: 80%;
+    margin: 0 auto;
+    z-index: 2;
+}
+
+
+/* FOOTER */
+.footerTabContainer {
+    width: 100%;
+    gap: 0;
+    border-bottom: solid 1px #C1CED9;
+
+}
+
+.footerTabContainerItem {
+    width: 20%;
+}
+
+.logoImg{
+    height: 60px;
+    width: 100%;
+    background-image: url("../images/logoSPH.png");
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat; 
+}
+
+/* CSS FOR MOBILE */
+@media (max-width: 991px) {
+    .txtH1 {
+        font-size: 28px;
+        font-weight: 700;
+    }
+    
+    
+    .txtH2 {
+        font-size: 24px;
+        font-weight: 700;
+    }
+    
+    .txtH3 {
+        font-size: 20px;
+        font-weight: 700;
+    }
+    
+    .txtH4 {
+        font-size: 16px;
+        font-weight: 400;
+    }
+    
+    .txtP1 {
+        font-size: 14px;
+        font-weight: 400;   
+    }
+    
+    .txtP3 {
+        font-size: 12px;
+        font-weight: 400;
+    }
+    
+    .txtP4 {
+        font-size: 10px;
+        font-weight: 400;
+    }
+    
+    .txtB1 {
+        font-size: 14px;
+        font-weight: 600;
+    }
+    
+    .txtB2 {
+        font-size: 12px;
+        font-weight: 600;
+    }
+    
+    /* CUSTOM STYLES */
+    .showMobile{
+        display: inline-block;
+    }
+
+    .hideMobile {
+        display: none;
+    }
+
+    .iframeContainer {
+        width: 100%;
+        height: 240px;
+    }
+
+    .mobileMarginB16{
+        margin-bottom: 16px;
+    }
+
+    /* SECT1 - HOME BANNER */
+    #sect1{
+        height: 90vh;
+    }
+
+    .carousel-inner{
+        height: 90vh;
+    }
+
+    /* SECT2 - SCHOLARSHIP OFFERED */
+    .cardScholarContainer {
+        width: 90vw;
+    }
+
+    .cardScholarContainer:hover .showMobile {
+        display: none;
+    }
+
+    .cardScholarContainer:not(:hover) .showMobile {
+        display: inline-block;
+    }
+
+    .cardScholarshipImgContainer{
+        margin-top: 40px;
+        width: 90vw;
+        height: 60%;
+    }
+
+    .sect2BContainer{
+        width: 90%;
+    }
+
+    /* SECT4 - SCHOLARSHIP OFFERED */
+    #sect4{
+        margin: 0 2.5%;
+    }
+
+    .scholarshipSect4Img-3{
+        height: 320px;
+    }
+
+    .scholarshipSect4Img-4{
+        height: 320px;
+    }
+
+    /* SECT5 - SCHOLARSHIP OFFERED */
+    #sect5{
+        margin: 0 2.5%;
+    }
+
+    #sect5 .txtH4{
+        font-size: 24px;
+    }
+
+    .cardSchoolContainer:hover .showMobile {
+        display: none;
+    }
+
+    .cardSchoolContainer:not(:hover) .showMobile {
+        display: inline-block;
+    }
+
+    .marginB80 .marginB16{
+        margin-bottom: 0;
+    }
+
+    /* SECT6 - SCHOLARSHIP OFFERED */
+    #sect6{
+        margin: 0 2.5%;
+    }
+
+    .timelineTabContainer .txtP1{
+        font-size: 12px;
+        line-height: 1.4;
+    }
+
+    /* SECT7 - TESTIMONIALS */
+    #sect7{
+        margin: 0 2.5%;
+    }
+
+    .modalBodyTestimoniContainer {
+        height: 100%;
+        margin-bottom: 48px;
+    }
+
+    .showTable{
+        display:contents;
+    }
+
+     /* SECT9 - FAQ */
+     #sect9{
+        margin: 0 2.5%;
+    }
+
+    /* FOOTER */
+    .logoImg{
+        margin-bottom: 16px;
+    }
+
+    .footerTabContainer{
+        font-size: 12px;
+    }
+
+    #footer .align-items-center{
+        margin-bottom: 8px;
+    }
+
+}
