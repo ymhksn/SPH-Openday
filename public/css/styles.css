@@ -92,6 +92,14 @@ a:hover {
     line-height: 2;
 }
 
+.txtP2 {
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2;
+}
+
 .txtP3 {
     font-family: "Open Sans";
     font-size: 12px;
@@ -211,6 +219,10 @@ html {
     }
 }
 
+.marginB8 {
+    margin-bottom: 8px;
+}
+
 .marginB16 {
     margin-bottom: 16px;
 }
@@ -248,7 +260,7 @@ html {
     display: inline-block;
 }
 
-.showMobile{
+.showMobile {
     display: none;
 }
 
@@ -281,8 +293,8 @@ html {
 
 .iframeContainer {
     position: relative;
-    width: 100%;
-    height: 560px;
+    width: 98%;
+    height: 720px;
 }
 
 .fullWidthIframe {
@@ -378,7 +390,7 @@ html {
         display: flex;
     }
 
-    .closeOffCanvas{
+    .closeOffCanvas {
         color: #1B1B1B;
     }
 }
@@ -427,7 +439,6 @@ html {
 /* SECT1 - Main banner*/
 #sect1 {
     height: 90vh;
-    background-color: red;
     position: relative;
 }
 
@@ -467,11 +478,11 @@ html {
 
 
 /* SECT2 - EVENT DETAILS*/
-#sect2{
+#sect2 {
     padding-top: 40px;
 }
 
-.highlightContainerItem{
+.highlightContainerItem {
     height: 304px;
     min-width: 19%;
     padding: 32px 16px;
@@ -481,300 +492,213 @@ html {
     border-radius: 128px;
 }
 
-.highlightContainerItem:hover{
+.highlightContainerItem:hover {
     background-color: #05195A;
 }
 
-.highlightContainerItem:hover .bgSecondary400{
+.highlightContainerItem:hover .bgSecondary400 {
     color: #F8F8F8;
 }
 
-.iconHighlight1{
+.iconHighlight1 {
     height: 128px;
     background-image: url("../images/iconHighlight1.svg");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 }
-.iconHighlight1:hover{
+
+.iconHighlight1:hover {
     background-image: url("../images/iconHighlight1-Hover.svg");
 }
 
-.iconHighlight2{
+.iconHighlight2 {
     height: 128px;
     background-image: url("../images/iconHighlight2.svg");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 }
-.iconHighlight2:hover{
+
+.iconHighlight2:hover {
     background-image: url("../images/iconHighlight2-Hover.svg");
 }
 
-.iconHighlight3{
+.iconHighlight3 {
     height: 128px;
     background-image: url("../images/iconHighlight3.svg");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 }
-.iconHighlight3:hover{
+
+.iconHighlight3:hover {
     background-image: url("../images/iconHighlight3-Hover.svg");
 }
 
-.iconHighlight4{
+.iconHighlight4 {
     height: 128px;
     background-image: url("../images/iconHighlight4.svg");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 }
-.iconHighlight4:hover{
+
+.iconHighlight4:hover {
     background-image: url("../images/iconHighlight4-Hover.svg");
 }
 
-.iconHighlight5{
+.iconHighlight5 {
     height: 128px;
     background-image: url("../images/iconHighlight5.svg");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 }
-.iconHighlight5:hover{
+
+.iconHighlight5:hover {
     background-image: url("../images/iconHighlight5-Hover.svg");
 }
 
-/* SECT5 - OUR SCHOOLS*/
-.cardSchoolContainer {
-    height: 320px;
-    min-width: 20%;
-    padding: 0 8px;
-    margin: 0 auto 16px;
-    position: relative;
-}
 
-.cardSchoolTitle {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    bottom: 0;
-    left: 8px;
-    width: calc(100% - 16px);
-    box-sizing: border-box;
-    height: 40%;
-    justify-content: center;
-    background-color: #05195A;
-    border-radius: 0 0 16px 16px;
-}
-
-.cardSchoolContainer:hover .cardSchoolTitle {
-    animation: expandInSchool 0.5s ease-in-out forwards;
-    border-radius: 16px;
-    transition: all 1s linear;
-}
-
-.cardSchoolContainer:not(:hover) .cardSchoolTitle {
-    animation: expandOutSchool 0.5s ease-in-out forwards;
-    border-radius: 0;
-    transition: all 1s linear;
-}
-
-@keyframes expandInSchool {
-    0% {
-        height: 40%;
-        background-color: rgba(0, 0, 0, 0.0);
-    }
-
-    100% {
-        height: 100%;
-        background-color: #05195A;
-    }
-}
-
-@keyframes expandOutSchool {
-    0% {
-        height: 100%;
-        background-color: #05195A;
-    }
-
-    100% {
-        height: 40%;
-        background-color: rgba(0, 0, 0, 0.0);
-    }
-}
-
-.cardSchoolContainer:hover .hide {
-    animation: opacityIn 0.8s ease-in-out forwards;
-    display: inline-block;
-    margin-top: 18px;
-}
-
-.cardSchoolContainer:not(:hover) .hide {
-    animation: opacityOut 0.8s ease-in-out forwards;
-}
-
-.cardSchoolContainer:hover .blackGradientOverlay::before {
-    animation: expandInSchoolOverlay 1s ease-in-out forwards;
-    margin: 0 8px;
-    border-radius: 0 0 16px 16px;
-}
-
-.cardSchoolContainer:not(:hover) .blackGradientOverlay::before {
-    animation: expandOutSchoolOverlay 0.5s ease-in-out forwards;
-    margin: 0 8px;
-    border-radius: 0 0 16px 16px;
-}
-
-@keyframes expandInSchoolOverlay {
-    0% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-    }
-}
-
-@keyframes expandOutSchoolOverlay {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-.cardSchoolImg1 {
-    height: 320px;
-    background-image: url("../images/cardSchoolImg1.jpg");
-    background-size: cover;
-    background-position: center;
-    border-radius: 16px;
-}
-
-.cardSchoolImg2 {
-    height: 320px;
-    background-image: url("../images/cardSchoolImg2.jpg");
-    background-size: cover;
-    background-position: center;
-    border-radius: 16px;
-}
-
-.cardSchoolImg3 {
-    height: 320px;
-    background-image: url("../images/cardSchoolImg3.jpg");
-    background-size: cover;
-    background-position: center;
-    border-radius: 16px;
-}
-
-.cardSchoolImg4 {
-    height: 320px;
-    background-image: url("../images/cardSchoolImg4.jpg");
-    background-size: cover;
-    background-position: center;
-    border-radius: 16px;
-}
-
-.cardSchoolImg5 {
-    height: 320px;
-    background-image: url("../images/cardSchoolImg5.jpg");
-    background-size: cover;
-    background-position: center;
-    border-radius: 16px;
-}
-
-
-/* SECT6 - APPLICATION TIMELINE*/
+/* SECT3 - CAMPUSES*/
 .timelineTabContainer {
     padding: 40px 0;
 }
 
-.timeline {
-    position: relative;
-    width: 80%;
+.accordionCampusContainer{
+    display: flex;
     margin: 40px auto;
-}
-
-.timeline::before {
-    content: '';
-    position: absolute;
-    left: 50%;
-    top: 0;
     height: 100%;
-    border-left: 2px dotted #6C757D;
-    transform: translateX(-50%);
 }
 
-.timeline-item {
-    position: relative;
-    width: 50%;
-    height: 100px;
-    margin: 0 auto;
-    padding-bottom: 16px;
-    border-bottom: 2px dotted #6C757D;
-}
-
-.dotLeft {
-    content: '';
-    position: absolute;
-    bottom: -6px;
-    right: -12px;
-    width: 12px;
-    height: 12px;
-    background-color: #6C757D;
-    border-radius: 50%;
-    transform: translateX(-50%);
-}
-
-.dotRight {
-    content: '';
-    position: absolute;
-    bottom: -6px;
-    left: 0;
-    width: 12px;
-    height: 12px;
-    background-color: #6C757D;
-    border-radius: 50%;
-    transform: translateX(-50%);
-}
-
-.timeline-item.left {
-    float: left;
-    clear: both;
-}
-
-.timeline-item.right {
-    float: right;
-    clear: both;
-}
-
-.timeline-item.left {
+.Accordion-item {
     text-align: left;
+    background-color: #E9ECEF;
+    border-radius: 8px;
+    cursor: pointer;
 }
 
-.timeline-item.right {
-    text-align: right;
+.Accordion-togglePadding{
+    padding: 32px 24px;
 }
 
-.timelineLVHeight {
-    height: 900px;
+.Accordion-item:hover {
+    background-color: #05195A;
+    color: #F8F8F8;
 }
 
-.timelineSCHeight {
-    height: 600px;
+.Accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
 }
 
-.timelineLCHeight {
-    height: 600px;
+.active-toggle{
+    color: #F8F8F8;
 }
 
-.timelineKVHeight {
-    height: 600px;
+.active-accordion-item{
+    background-color: #05195A;
+    color: #F8F8F8;
 }
 
-/* SECT7 - TESTIMONIALS */
+.accordionCampusImgContainer{
+    padding-left: 16px;
+}
+
+.accordionCampusAnchor{
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+}
+
+.accordionItemLV1{
+    background-image: url("../images/accordionCampusLV-1.jpg");
+}
+
+.accordionItemLV2{
+    background-image: url("../images/accordionCampusLV-2.jpg");
+}
+
+.accordionItemLV3{
+    background-image: url("../images/accordionCampusLV-3.jpg");
+}
+
+.accordionItemLV4{
+    background-image: url("../images/accordionCampusLV-4.jpg");
+}
+
+
+.accordionItemSC1{
+    background-image: url("../images/accordionCampusSC-1.jpg");
+}
+
+.accordionItemSC2{
+    background-image: url("../images/accordionCampusSC-2.jpg");
+}
+
+.accordionItemSC3{
+    background-image: url("../images/accordionCampusSC-3.jpg");
+}
+
+.accordionItemSC4{
+    background-image: url("../images/accordionCampusSC-4.jpg");
+}
+
+
+.accordionItemLC1{
+    background-image: url("../images/accordionCampusLC-1.jpg");
+}
+
+.accordionItemLC2{
+    background-image: url("../images/accordionCampusLC-2.jpg");
+}
+
+.accordionItemLC3{
+    background-image: url("../images/accordionCampusLC-3.jpg");
+}
+
+.accordionItemLC4{
+    background-image: url("../images/accordionCampusLC-4.jpg");
+}
+
+
+.accordionItemKV1{
+    background-image: url("../images/accordionCampusKV-1.jpg");
+}
+
+.accordionItemKV2{
+    background-image: url("../images/accordionCampusKV-2.jpg");
+}
+
+.accordionItemKV3{
+    background-image: url("../images/accordionCampusKV-3.jpg");
+}
+
+.accordionItemKV4{
+    background-image: url("../images/accordionCampusKV-4.jpg");
+}
+
+
+.accordionItemPV1{
+    background-image: url("../images/accordionCampusPV-1.jpg");
+}
+
+.accordionItemPV2{
+    background-image: url("../images/accordionCampusPV-2.jpg");
+}
+
+.accordionItemPV3{
+    background-image: url("../images/accordionCampusPV-3.jpg");
+}
+
+.accordionItemPV4{
+    background-image: url("../images/accordionCampusPV-4.jpg");
+}
+
+/* SECT4 - GALLERIES */
 .overflow-x-auto {
     overflow-x: auto;
     white-space: nowrap;
@@ -801,7 +725,68 @@ html {
     flex-wrap: nowrap;
 }
 
+#sect4{
+    position: relative;
+}
 
+.galleryImgContainer{
+    height: 320px;
+    width: 480px;
+    padding: 0 8px;
+    margin: 0 auto;
+    position: relative;
+    display: inline-block;
+}
+
+.galleryImg1 {
+    height: 100%;
+    background-image: url("../images/cardTestimoniImg1.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+}
+
+.opacity50{
+    opacity: 50%;
+}
+
+.buttonArrowLeft{
+    position: absolute;
+    bottom: 30%;
+    left: 32px;
+    z-index: 1;
+    height: 40px;
+    width: 40px;
+    background-image: url("../images/buttonArrow.png");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+.buttonArrowLeft:hover{
+    background-image: url("../images/buttonArrowHover.png");
+}
+
+.buttonArrowRight{
+    position: absolute;
+    bottom: 30%;
+    right: 32px;
+    z-index: 1;
+    height: 40px;
+    width: 40px;
+    background-image: url("../images/buttonArrow.png");
+    background-size: cover;
+    background-position: center;
+    transform: rotate(180deg);
+    cursor: pointer;
+}
+
+.buttonArrowRight:hover{
+    background-image: url("../images/buttonArrowHover.png");
+}
+
+
+/* SECT7 - TESTIMONIALS */
 .cardTestimoniContainer {
     height: 320px;
     width: 280px;
@@ -866,7 +851,7 @@ html {
     padding: 8px 0 0;
 }
 
-.showTable{
+.showTable {
     display: none;
 }
 
@@ -965,6 +950,7 @@ html {
     background-position: center;
     border-radius: 16px;
 }
+
 .swipeLeftRight {
     width: 40px;
     height: 40px;
@@ -1030,13 +1016,13 @@ html {
     width: 20%;
 }
 
-.logoImg{
+.logoImg {
     height: 60px;
     width: 100%;
     background-image: url("../images/logoSPH.png");
     background-size: contain;
     background-position: left;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
 }
 
 /* CSS FOR MOBILE */
@@ -1045,50 +1031,50 @@ html {
         font-size: 28px;
         font-weight: 700;
     }
-    
-    
+
+
     .txtH2 {
         font-size: 24px;
         font-weight: 700;
     }
-    
+
     .txtH3 {
         font-size: 20px;
         font-weight: 700;
     }
-    
+
     .txtH4 {
         font-size: 16px;
         font-weight: 400;
     }
-    
+
     .txtP1 {
         font-size: 14px;
-        font-weight: 400;   
+        font-weight: 400;
     }
-    
+
     .txtP3 {
         font-size: 12px;
         font-weight: 400;
     }
-    
+
     .txtP4 {
         font-size: 10px;
         font-weight: 400;
     }
-    
+
     .txtB1 {
         font-size: 14px;
         font-weight: 600;
     }
-    
+
     .txtB2 {
         font-size: 12px;
         font-weight: 600;
     }
-    
+
     /* CUSTOM STYLES */
-    .showMobile{
+    .showMobile {
         display: inline-block;
     }
 
@@ -1101,16 +1087,16 @@ html {
         height: 240px;
     }
 
-    .mobileMarginB16{
+    .mobileMarginB16 {
         margin-bottom: 16px;
     }
 
     /* SECT1 - HOME BANNER */
-    #sect1{
+    #sect1 {
         height: 90vh;
     }
 
-    .carousel-inner{
+    .carousel-inner {
         height: 90vh;
     }
 
@@ -1127,35 +1113,35 @@ html {
         display: inline-block;
     }
 
-    .cardScholarshipImgContainer{
+    .cardScholarshipImgContainer {
         margin-top: 40px;
         width: 90vw;
         height: 60%;
     }
 
-    .sect2BContainer{
+    .sect2BContainer {
         width: 90%;
     }
 
     /* SECT4 - SCHOLARSHIP OFFERED */
-    #sect4{
+    #sect4 {
         margin: 0 2.5%;
     }
 
-    .scholarshipSect4Img-3{
+    .scholarshipSect4Img-3 {
         height: 320px;
     }
 
-    .scholarshipSect4Img-4{
+    .scholarshipSect4Img-4 {
         height: 320px;
     }
 
     /* SECT5 - SCHOLARSHIP OFFERED */
-    #sect5{
+    #sect5 {
         margin: 0 2.5%;
     }
 
-    #sect5 .txtH4{
+    #sect5 .txtH4 {
         font-size: 24px;
     }
 
@@ -1167,22 +1153,22 @@ html {
         display: inline-block;
     }
 
-    .marginB80 .marginB16{
+    .marginB80 .marginB16 {
         margin-bottom: 0;
     }
 
     /* SECT6 - SCHOLARSHIP OFFERED */
-    #sect6{
+    #sect6 {
         margin: 0 2.5%;
     }
 
-    .timelineTabContainer .txtP1{
+    .timelineTabContainer .txtP1 {
         font-size: 12px;
         line-height: 1.4;
     }
 
     /* SECT7 - TESTIMONIALS */
-    #sect7{
+    #sect7 {
         margin: 0 2.5%;
     }
 
@@ -1191,25 +1177,25 @@ html {
         margin-bottom: 48px;
     }
 
-    .showTable{
-        display:contents;
+    .showTable {
+        display: contents;
     }
 
-     /* SECT9 - FAQ */
-     #sect9{
+    /* SECT9 - FAQ */
+    #sect9 {
         margin: 0 2.5%;
     }
 
     /* FOOTER */
-    .logoImg{
+    .logoImg {
         margin-bottom: 16px;
     }
 
-    .footerTabContainer{
+    .footerTabContainer {
         font-size: 12px;
     }
 
-    #footer .align-items-center{
+    #footer .align-items-center {
         margin-bottom: 8px;
     }
 
