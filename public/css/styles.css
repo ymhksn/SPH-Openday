@@ -48,7 +48,7 @@ a:hover {
 }
 
 .bgSecondary400 {
-    color: #05195A;
+    color: #1E4F80;
 }
 
 .txtH1 {
@@ -81,6 +81,14 @@ a:hover {
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
+    line-height: normal;
+}
+
+.txtH5 {
+    font-family: "Quicksand";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
     line-height: normal;
 }
 
@@ -149,7 +157,7 @@ html {
 /* Custom Styles */
 .buttonPrimary {
     border-radius: 6px;
-    background-color: #de0f15;
+    background-color: #DB5935;
     justify-content: center;
     margin: auto 0;
 }
@@ -287,7 +295,7 @@ html {
 
 .inlineLink {
     text-decoration: underline;
-    color: #de0f15;
+    color: #DB5935;
 }
 
 .iframeContainer {
@@ -307,7 +315,7 @@ html {
 
 .lineHorizontal {
     border-style: solid;
-    border-bottom: #05195A;
+    border-bottom: #1E4F80;
     border-width: 1px;
     width: 100%;
 }
@@ -321,15 +329,16 @@ html {
 }
 
 .nav .nav-link.active {
-    color: #DE0F15;
+    color: #DB5935;
 }
 
 .sectionTitle {
     margin: 40px auto 8px;
+    letter-spacing: 4pt;
 }
 
 .anchorInline {
-    color: #DE0F15;
+    color: #DB5935;
     text-decoration: underline;
 }
 
@@ -360,6 +369,10 @@ html {
     width: 200px;
     max-width: 100%;
     min-width: 150px;
+}
+
+.nav-item{
+    margin-right: 24px;
 }
 
 .textAlignLeft {
@@ -490,7 +503,7 @@ html {
 }
 
 .highlightContainerItem:hover {
-    background-color: #05195A;
+    background-color: #2AB38E;
 }
 
 .highlightContainerItem:hover .bgSecondary400 {
@@ -499,62 +512,62 @@ html {
 
 .iconHighlight1 {
     height: 128px;
-    background-image: url("../images/iconHighlight1.png");
+    background-image: url("../images/iconHighlight1.svg");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-.iconHighlight1:hover {
-    background-image: url("../images/iconHighlight1-Hover.png");
+.highlightContainerItem:hover .iconHighlight1 {
+    background-image: url("../images/iconHighlight1-Hover.svg");
 }
 
 .iconHighlight2 {
     height: 128px;
-    background-image: url("../images/iconHighlight2.png");
+    background-image: url("../images/iconHighlight2.svg");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-.iconHighlight2:hover {
-    background-image: url("../images/iconHighlight2-Hover.png");
+.highlightContainerItem:hover .iconHighlight2 {
+    background-image: url("../images/iconHighlight2-Hover.svg");
 }
 
 .iconHighlight3 {
     height: 128px;
-    background-image: url("../images/iconHighlight3.png");
+    background-image: url("../images/iconHighlight3.svg");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-.iconHighlight3:hover {
-    background-image: url("../images/iconHighlight3-Hover.png");
+.highlightContainerItem:hover .iconHighlight3 {
+    background-image: url("../images/iconHighlight3-Hover.svg");
 }
 
 .iconHighlight4 {
     height: 128px;
-    background-image: url("../images/iconHighlight4.png");
+    background-image: url("../images/iconHighlight4.svg");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-.iconHighlight4:hover {
-    background-image: url("../images/iconHighlight4-Hover.png");
+.highlightContainerItem:hover .iconHighlight4 {
+    background-image: url("../images/iconHighlight4-Hover.svg");
 }
 
 .iconHighlight5 {
     height: 128px;
-    background-image: url("../images/iconHighlight5.png");
+    background-image: url("../images/iconHighlight5.svg");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-.iconHighlight5:hover {
-    background-image: url("../images/iconHighlight5-Hover.png");
+.highlightContainerItem:hover .iconHighlight5 {
+    background-image: url("../images/iconHighlight5-Hover.svg");
 }
 
 
@@ -584,6 +597,7 @@ html {
     background-color: #E9ECEF;
     border-radius: 8px;
     cursor: pointer;
+    color: #1E4F80; /* for text color */
 }
 
 .Accordion-togglePadding {
@@ -591,7 +605,7 @@ html {
 }
 
 .Accordion-item:hover {
-    background-color: #05195A;
+    background-color: #2AB38E;
     color: #F8F8F8;
 }
 
@@ -606,7 +620,7 @@ html {
 }
 
 .active-accordion-item {
-    background-color: #05195A;
+    background-color: #2AB38E;
     color: #F8F8F8;
 }
 
