@@ -186,3 +186,99 @@ navLinks.forEach((link) => {
 
 
 //GALLERY HORIZONTAL BUTTON AND AUTO PLAY
+/* SET IMAGE SLIDER HEIGHT */
+const slideImagerImages = document.querySelector('.slideImagerImages');
+const slideImages = document.querySelectorAll('.slideImage');
+let currentIndex = 0;
+let autoslideImageInterval;
+let slideImagerImagesWidth = slideImages[0].offsetWidth;
+
+function nextslideImage() {
+  currentIndex = (currentIndex + 1) % slideImages.length;
+  updateslideImagerImages();
+}
+
+function prevslideImage() {
+  currentIndex = (currentIndex - 1 + slideImages.length) % slideImages.length;
+  updateslideImagerImages();
+}
+
+function updateslideImagerImages() {
+  const activeslideImageOffset = -(slideImages[currentIndex].offsetLeft - (slideImagerImages.clientWidth - slideImagerImagesWidth) / 2);
+
+  if (currentIndex === slideImages.length - 1 && !slideImagerImages.style.transition) {
+    slideImagerImages.style.transition = 'none';
+    slideImagerImages.style.transform = `translateX(0px)`;
+
+    setTimeout(() => {
+      slideImagerImages.style.transition = 'transform 0.5s ease-in-out';
+      currentIndex = 0;
+      updateslideImagerImages();
+    }, 0);
+  } else {
+    slideImagerImages.style.transform = `translateX(${activeslideImageOffset}px)`;
+  }
+
+  updateslideImageVisibility(); // Call the function to update slideImage visibility
+  updateslideImageSize();
+}
+
+function updateslideImageVisibility() {
+  slideImages.forEach((slideImage, index) => {
+    if (index === currentIndex || (index === currentIndex - 1 && currentIndex === 0)) {
+      slideImage.classList.remove('inactive');
+    } else {
+      slideImage.classList.add('inactive');
+    }
+  });
+}
+
+function updateslideImageSize() {
+  slideImages.forEach((slideImage, index) => {
+    if (index === currentIndex) {
+      slideImage.style.transform = 'scale(1.2)'; // Increase size for the active slideImage
+    } else {
+      slideImage.style.transform = 'scale(0.8)'; // Reset size for inactive slideImages
+    }
+  });
+}
+
+// Auto-slideImage functionality
+function startAutoslideImage() {
+  autoslideImageInterval = setInterval(() => {
+    nextslideImage();
+  }, 3000); // Change slideImage every 3 seconds (adjust as needed)
+}
+
+function stopAutoslideImage() {
+  clearInterval(autoslideImageInterval);
+}
+
+// Start auto-slideImage when the page loads
+startAutoslideImage();
+
+// Pause auto-slideImage on hover (optional)
+slideImagerImages.addEventListener('mouseover', stopAutoslideImage);
+slideImagerImages.addEventListener('mouseout', startAutoslideImage);
+
+// Loop back to the first image after any slideImage
+function checkLastslideImage() {
+  if (currentIndex === slideImages.length - 1 || currentIndex === 0) {
+    setTimeout(() => {
+      currentIndex = 1; // Start from the second image
+      updateslideImagerImages();
+    }, 500); // Delay before looping to the second slideImage
+  }
+}
+
+// Listen for the end of the transition to check for the last slideImage
+slideImagerImages.addEventListener('transitionend', checkLastslideImage);
+
+// Recalculate slideImagerImagesWidth when the window is resized
+window.addEventListener('resize', () => {
+  slideImagerImagesWidth = slideImagerImages.clientWidth;
+  updateslideImagerImages();
+});
+
+// Initial positioning and sizing
+updateslideImagerImages();
