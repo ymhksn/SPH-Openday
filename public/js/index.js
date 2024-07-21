@@ -1,6 +1,10 @@
 // Your JavaScript code goes here
 console.log("Hello, world!");
 
+
+
+
+
 // Add event listener to scroll links
 document.querySelectorAll(".scroll-link").forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
@@ -43,6 +47,7 @@ closeOffCanvasLinks.forEach((link) => {
     });
   });
 });
+
 
 
 
@@ -282,3 +287,9 @@ window.addEventListener('resize', () => {
 
 // Initial positioning and sizing
 updateslideImagerImages();
+
+
+
+
+
+

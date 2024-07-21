@@ -12,7 +12,7 @@ a {
 }
 
 a:hover {
-    color: #BC0005;
+    color: #D23B11;
 }
 
 .bgGrayscaleBlack {
@@ -51,6 +51,10 @@ a:hover {
     color: #1E4F80;
 }
 
+.bgSemanticTosca{
+    color: #1DA7A9;
+}
+
 .txtH1 {
     font-family: "Open Sans";
     font-size: 40px;
@@ -86,7 +90,7 @@ a:hover {
 
 .txtH5 {
     font-family: "Quicksand";
-    font-size: 20px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -163,7 +167,7 @@ html {
 }
 
 .buttonPrimary:hover {
-    background-color: #BC0005;
+    background-color: #D23B11;
 }
 
 .buttonSecondary {
@@ -298,6 +302,10 @@ html {
     color: #DB5935;
 }
 
+.inlineLink:hover{
+    color: #D23B11;
+}
+
 .iframeContainer {
     position: relative;
     width: 98%;
@@ -341,6 +349,27 @@ html {
     color: #DB5935;
     text-decoration: underline;
 }
+
+/* SCROLL-BAR STYLE */
+::-webkit-scrollbar {
+    height: 8px;
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 0;
+    background: #F8F8F8;
+}
+  
+::-webkit-scrollbar-thumb {
+    border-radius: 16px;
+    background: #DB5935;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #D23B11; 
+}
+
 
 /* Navbar */
 .navBarLeft {
@@ -493,17 +522,17 @@ html {
 }
 
 .highlightContainerItem {
-    height: 304px;
+    height: 280px;
     min-width: 19%;
     padding: 32px 16px;
     margin: 0 auto;
     position: relative;
     background-color: #E9ECEF;
-    border-radius: 128px;
+    border-radius: 16px;
 }
 
 .highlightContainerItem:hover {
-    background-color: #2AB38E;
+    background-color: #2AB3BE;
 }
 
 .highlightContainerItem:hover .bgSecondary400 {
@@ -605,7 +634,7 @@ html {
 }
 
 .Accordion-item:hover {
-    background-color: #2AB38E;
+    background-color: #2AB3BE;
     color: #F8F8F8;
 }
 
@@ -620,7 +649,7 @@ html {
 }
 
 .active-accordion-item {
-    background-color: #2AB38E;
+    background-color: #2AB3BE;
     color: #F8F8F8;
 }
 
@@ -810,11 +839,6 @@ html {
 
 .flex-nowrap {
     flex-wrap: nowrap;
-}
-
-.overflow-x-auto::-webkit-scrollbar {
-    width: 0;
-    height: 0;
 }
 
 .overflow-normal {
