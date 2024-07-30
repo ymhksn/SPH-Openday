@@ -1125,6 +1125,15 @@ html {
     .iframeContainer {
         width: 94%;
         height: 240px;
+        margin: 0 3% 24px;
+    }
+
+    .fullWidthIframe {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
     }
 
     .mobileMarginB16 {
