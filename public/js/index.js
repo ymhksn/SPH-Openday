@@ -287,19 +287,3 @@ window.addEventListener('resize', () => {
 
 // Initial positioning and sizing
 updateslideImagerImages();
-
-
-
-//STOP YOUTUBE VIDEO
-document.addEventListener('DOMContentLoaded', function() {
-  var tabLinks = document.querySelectorAll('.nav-link.footerTabContainerItem');
-  tabLinks.forEach(function(tabLink) {
-    tabLink.addEventListener('shown.bs.tab', function() {
-      var iframes = document.querySelectorAll('iframe');
-      iframes.forEach(function(iframe) {
-        var src = iframe.getAttribute('src');
-        iframe.setAttribute('src', src);
-      });
-    });
-  });
-});
