@@ -999,6 +999,14 @@ html {
     border-radius: 16px;
 }
 
+.cardTestimoniImg10 {
+    height: 320px;
+    background-image: url("../images/cardTestimoniImg10.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px;
+}
+
 .swipeLeftRight {
     width: 40px;
     height: 40px;
