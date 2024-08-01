@@ -4,10 +4,11 @@ body {
     font-family: 'Open Sans', sans-serif;
     text-align: center;
     background-color: #F8F8F8;
+    color: #05195A;
 }
 
 a {
-    color: #1B1B1B;
+    color: #05195A;
     text-decoration: none;
 }
 
@@ -53,6 +54,10 @@ a:hover {
 
 .bgSemanticTosca{
     color: #1DA7A9;
+}
+
+.bgSemanticNavy{
+    color: #05195A;
 }
 
 .txtH1 {
@@ -308,7 +313,7 @@ html {
 
 .iframeContainer {
     position: relative;
-    height: 540px;
+    height: 360px;
 }
 
 .fullWidthIframe {
@@ -848,10 +853,14 @@ html {
     white-space: wrap;
 }
 
-
 .flex-nowrap {
     flex-wrap: nowrap;
 }
+
+/* .modal-body{
+    background-color: red;
+    margin: 0 auto;
+} */
 
 .cardTestimoniContainer {
     height: 320px;
